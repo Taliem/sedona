@@ -3,3 +3,10 @@
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin mobile-padding {
+    @media all and (max-width: $tablet) {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+    }
+}

@@ -76,7 +76,7 @@ function liveReload() {
         open: false
     });
     watch("src/scss/**/*.scss", { ignoreInitial: false }, styles);
-    watch("src/scripts/**/*.js", { ignoreInitial: false }, javascript);
+    watch("src/js/**/*.js", { ignoreInitial: false }, javascript);
     watch("src/img/**/*", { ignoreInitial: false }, copyImage);
     watch("src/fonts/**/*", { ignoreInitial: false }, copyFonts);
     watch("src/html/**/*.html", { ignoreInitial: false }, html);

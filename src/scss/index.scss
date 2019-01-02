@@ -1,7 +1,8 @@
 // normalize-scss
 @import "normalize";
 @include normalize();
-@import "variables";
 @import "functions";
+@import "variables";
 @import "mixins";
+@import "global";
 @import "navbar";

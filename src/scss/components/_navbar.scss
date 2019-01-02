@@ -1,13 +1,86 @@
 .navbar {
-    height: rem(51px);
+    display: flex;
+    justify-content: flex-end;
     position: relative;
 }
-.mobile-btn {
-    padding: 0;
-    border: none;
+.navbar__logo {
+    width: 102px;
+    height: 82px;
+    background: url(../img/logo.svg) no-repeat;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    margin-right: -(102px/2);
     font-size: 0;
 }
-.mobile-btn__icon {
+
+.navbar__menu-btn {
+    margin: rem(18px) 0;
+    @include mobile-padding;
+    z-index: 10;
+}
+
+.menu-btn {
+    cursor: pointer;
     width: 22px;
     height: 22px;
+}
+
+.navbar__menu-list {
+    // display: none;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+.menu-list {
+    background: $blue;
+    text-align: center;
+    display: none;
+}
+
+.menu-list--show {
+    display: block;
+}
+
+.menu-list__entry {
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+    box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.2);
+}
+
+.menu-list__link {
+    display: inline-block;
+    width: 100%;
+    padding: rem(22px) 0;
+
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font(700, rem(18px));
+}
+
+.menu-list__right .menu-list__entry:last-of-type {
+    border: none;
+    box-shadow: none;
+}
+
+%m-menu {
+    color: #000000;
+    &:hover {
+        color: $blue;
+    }
+    &:active {
+        color: #000000;
+        opacity: 0.3;
+    }
+}
+%m-menu-active {
+    color: #766357;
+    &:hover {
+        color: #604e43;
+    }
+    &:active {
+        color: #766357;
+        opacity: 0.3;
+    }
 }
