@@ -13,8 +13,9 @@
     top: 0;
     margin-right: -(102px/2);
     font-size: 0;
-    @media screen and (min-width: $tablet) {
-        z-index: 10;
+    z-index: 10;
+    @media screen and (min-width: $tablet){
+        z-index: 30;
     }
     @media screen and (min-width: $desktop) {
         width: 187px;
@@ -26,7 +27,7 @@
 .navbar__menu-btn {
     margin: rem(18px) 0;
     @include mobile-padding;
-    z-index: 10;
+    z-index: 100;
     @media screen and (min-width: $tablet) {
         display: none;
     }
@@ -43,6 +44,10 @@
     top: 0%;
     left: 0%;
     width: 100%;
+    z-index: 20;
+    @media screen and (min-width: $tablet) {
+        position: static;
+    }
 }
 
 .menu-list {
