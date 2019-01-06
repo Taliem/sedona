@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
+    background: $white;
 }
 .navbar__logo {
     width: 102px;
@@ -12,12 +13,23 @@
     top: 0;
     margin-right: -(102px/2);
     font-size: 0;
+    @media screen and (min-width: $tablet) {
+        z-index: 10;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 187px;
+        height: 96px;
+        margin-right: -(187px/2);
+    }
 }
 
 .navbar__menu-btn {
     margin: rem(18px) 0;
     @include mobile-padding;
     z-index: 10;
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .menu-btn {
@@ -35,10 +47,18 @@
 
 .menu-list {
     background: $blue;
-    text-align: center;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s ease-out;
+    @media screen and (min-width: $tablet) {
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+        display: flex;
+        justify-content: space-between;
+        background: $white;
+    }
+    
 }
 
 .menu-list--show {
@@ -51,16 +71,31 @@
 .menu-list__entry {
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: $tablet) {
+        border: none;
+        box-shadow: none;
+    }
 }
 
 .menu-list__link {
     display: inline-block;
-    width: 100%;
     padding: rem(22px) 0;
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
     @include font(700, rem(18px));
+    @media screen and (min-width: $tablet) {
+        color: #000000;
+        &:hover {
+            color: $blue;
+        }
+        &:active {
+            color: #000000;
+            opacity: 0.3;
+        }
+    }
 }
 
 .menu-list__right .menu-list__entry:last-of-type {
@@ -68,23 +103,22 @@
     box-shadow: none;
 }
 
-// %m-menu {
-//     color: #000000;
-//     &:hover {
-//         color: $blue;
-//     }
-//     &:active {
-//         color: #000000;
-//         opacity: 0.3;
-//     }
-// }
-// %m-menu-active {
-//     color: #766357;
-//     &:hover {
-//         color: #604e43;
-//     }
-//     &:active {
-//         color: #766357;
-//         opacity: 0.3;
-//     }
-// }
+@media screen and (min-width: $tablet) {
+    .menu-list__left, .menu-list__right {
+        display: flex;
+        width: 40%;
+        justify-content: space-around;
+    }
+}
+
+.active-page {
+    color: #766357;
+    &:hover {
+        color: #604e43;
+    }
+    &:active {
+        color: #766357;
+        opacity: 0.3;
+    }
+}
+

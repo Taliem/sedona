@@ -4,7 +4,7 @@
       #desktop {
         display: none;
       }
-      @media all and (min-width: 102px) {
+      @media screen and (min-width: 102px) {
         #desktop {
           display: inline;
         }

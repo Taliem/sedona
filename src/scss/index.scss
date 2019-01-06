@@ -4,11 +4,12 @@
 @import "functions";
 @import "variables";
 @import "mixins";
-@import "global";
 
 body {
-    width: 320px;
+    max-width: 1200px;
     margin: 0 auto;
+    background: #f2f2f2;
 }
 
+@import "global";
 @import "navbar";
