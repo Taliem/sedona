@@ -5,4 +5,10 @@
 @import "variables";
 @import "mixins";
 @import "global";
+
+body {
+    width: 320px;
+    margin: 0 auto;
+}
+
 @import "navbar";
