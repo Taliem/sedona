@@ -1,3 +1,10 @@
 html {
     font-size: $root-text-size;
+    background: #f2f2f2;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: $white;
 }
