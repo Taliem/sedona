@@ -1,0 +1,51 @@
+.offer {
+    @include font(400, rem(14px));
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    @include mobile-padding;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 65px 50px;
+    }
+}
+
+.offers-wrap {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.offer__title {
+    margin: 0;
+    margin-left: 12px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 30px 0;
+
+    }
+}
+
+.offer__text {
+    flex-basis: 100%;
+    margin-top: 26px;
+    margin-bottom: 0;
+    @media screen and (min-width: $tablet) {
+        margin-top: 0;
+    }
+}
+
+.offer__icon {
+    @media screen and (min-width: $tablet) {
+        flex-basis: 100%;
+    }
+}
