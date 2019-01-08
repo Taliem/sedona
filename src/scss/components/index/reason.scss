@@ -1,0 +1,87 @@
+.reason {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    @include font(400, $root-text-size);
+
+    @media screen and (min-width: $tablet) {
+        height: 260px;
+        flex-direction: row;
+    }
+}
+
+.reason__content {
+    min-height: 200px;
+    display: flex;
+    @include mobile-padding;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        box-sizing: border-box;
+        padding: 0 46px;
+        width: 33%;
+    }
+}
+
+.reason__content--blue {
+    background: $blue;
+    color: $white;
+}
+
+.reason__title {
+    margin: 0;
+}
+
+.reason__line {
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    padding: 0 9px;
+}
+
+.reason__number {
+    position: relative;
+    background: $white;
+    padding: 0 6px;
+    z-index: 10;
+}
+
+.reason__content--blue .reason__number {
+    background: $blue;
+}
+
+.reason__line::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    content: "";
+    border-top: 2px solid $white;
+}
+
+.reason__text {
+    margin: 0;
+}
+
+.reason__crop {
+    max-height: 260px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.reason__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.reason__img {
+    width: 100%;
+}

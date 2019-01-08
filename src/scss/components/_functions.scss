@@ -1,3 +1,8 @@
 @function rem($size) {
     @return $size / $root-text-size * 1rem 
+};
+
+@function mq-em($size) {
+    // 1em для @media всегда 16px
+    @return $size / 16px * 1em 
 }

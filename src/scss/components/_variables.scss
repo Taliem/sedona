@@ -17,6 +17,6 @@ $white: #ffffff;
 $grey: #eeeeee;
 
 // grid
-$mobile: rem(320px);
-$tablet: rem(768px);
-$desktop: rem(1200px);
+$mobile: mq-em(320px);
+$tablet: mq-em(768px);
+$desktop: mq-em(1200px);

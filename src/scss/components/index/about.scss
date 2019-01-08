@@ -3,6 +3,7 @@
     background: $white;
     text-transform: uppercase;
     padding: 55px 0;
+    @include mobile-padding;
     position: relative;
 }
 
