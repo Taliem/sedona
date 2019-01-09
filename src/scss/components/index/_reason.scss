@@ -19,6 +19,7 @@
 .reason__content {
     min-height: 200px;
     display: flex;
+    background: $grey;
     @include mobile-padding;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@
 
 .reason__number {
     position: relative;
-    background: $white;
+    background: $grey;
     padding: 0 6px;
     z-index: 10;
 }
