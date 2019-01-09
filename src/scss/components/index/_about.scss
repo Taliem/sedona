@@ -51,3 +51,12 @@
     margin: 40px 0 0;
     @include font(400, rem($root-text-size));
 }
+
+.about__footer {
+    padding: 34px 0;
+    background: $white;
+
+    @include mq-tablet {
+        padding: 58px 0;
+    }
+}

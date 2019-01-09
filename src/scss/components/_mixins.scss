@@ -40,3 +40,9 @@
         @content;
     }
 }
+
+@mixin btn($padding-y, $padding-x, $bg, $color) {
+    padding: $padding-y $padding-x;
+    background: $bg;
+    color: $color
+}
