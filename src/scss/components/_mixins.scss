@@ -20,3 +20,23 @@
     content: "";
     background: url(../img/intro-triangle.svg) center/cover no-repeat;
 }
+
+@mixin mq-tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin mq-retina {
+    @media screen and 
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+        @content;
+    }
+}

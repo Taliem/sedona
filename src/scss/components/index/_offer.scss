@@ -1,6 +1,7 @@
 .offer {
     @include font(400, rem(14px));
     text-align: center;
+    text-transform: uppercase;
     padding-top: 26px;
     padding-bottom: 26px;
     @include mobile-padding;

@@ -10,6 +10,12 @@
     }
 }
 
+.reason--reverse {
+    @include mq-tablet {
+        flex-direction: row-reverse;
+    }
+}
+
 .reason__content {
     min-height: 200px;
     display: flex;
@@ -71,19 +77,20 @@
 }
 
 .reason__crop {
-    max-height: 260px;
     overflow: hidden;
     width: 100%;
     position: relative;
 }
 
 .reason__picture {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: auto;
-    width: 100%;
-    transform: translate(-50%,-50%);
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        width: 100%;
+        transform: translate(-50%,-50%);   
+    }
 }
 
 .reason__img {
