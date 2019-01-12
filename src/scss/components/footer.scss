@@ -29,6 +29,13 @@
     display: inline-block;
     background: $blue;
     font-size: 0;
+
+    &:hover {
+        background: #669ec0;
+    }
+    &:active {
+        background: #5496bd;
+    }
 }
 
 .social-link:nth-of-type(2) {
@@ -38,6 +45,10 @@
 .social-link__svg {
     padding: 15px 13px;
     display: inline-block;
+}
+
+.social-link:hover .social-link__svg-style {
+    opacity: 0.3;
 }
 
 .footer__developer {
@@ -52,4 +63,12 @@
 
 .footer__dev-svg {
     margin-left: 12px;
+}
+
+.footer__developer:hover .footer__dev-svg {
+    fill: $blue;
+}
+
+.footer__developer:active .footer__dev-svg {
+    opacity: 0.3;
 }

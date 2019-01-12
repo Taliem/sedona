@@ -20,6 +20,19 @@
 
 .interest__btn {
     @include font(700, rem(21px));
-    @include btn(1em, (47px / 21px + 0em), $blue, $white)
+    @include btn(1em, (47px / 21px + 0em), $blue, $white);
+    cursor: pointer;
 
+    &:hover {
+        background: #669ec0;
+    }
+    &:active {
+        background: #5496bd;
+        color: rgba(255, 255, 255, 0.3)
+    }
+}
+
+.interest__btn--disable {
+    background: #e5e5e5;
+    cursor: not-allowed;
 }
