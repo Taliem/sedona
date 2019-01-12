@@ -1,5 +1,6 @@
 .interest {
     @include mobile-padding;
+    padding-bottom: 50px;
     text-align: center;
     text-transform: uppercase;
     @include font(400, rem($root-text-size));
@@ -18,7 +19,7 @@
 }
 
 .interest__btn {
-    @include font(400, rem(21px));
+    @include font(700, rem(21px));
     @include btn(1em, (47px / 21px + 0em), $blue, $white)
 
 }

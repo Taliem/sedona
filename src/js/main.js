@@ -17,3 +17,17 @@ function toogleMenu() {
     
     menuList.classList.toggle("menu-list--show")
 }
+
+function initMap() {
+    var sedona = {lat: 34.870, lng: -111.760};
+    var map = new google.maps.Map(document.querySelector("#map"), {
+        center: sedona,
+        zoom: 8
+    });
+    var iconMarker = "/img/map-marker.svg";
+    var marker = new google.maps.Marker({
+        icon: iconMarker,
+        position: sedona,
+        map: map,
+    })
+}
