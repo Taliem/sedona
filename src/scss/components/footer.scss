@@ -1,0 +1,55 @@
+.footer {
+    padding-bottom: 20px;
+    text-align: center;
+
+    @include mq-tablet {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.footer__hashtag {
+    @include font(700, rem(21px));
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer__social-wrap {
+    padding: 50px 0;
+    font-size: 0;
+
+    @include mq-tablet {
+        padding: 0;
+    }
+}
+
+.social-link {
+    display: inline-block;
+    background: $blue;
+    font-size: 0;
+}
+
+.social-link:nth-of-type(2) {
+    margin: 0 6px;
+}
+
+.social-link__svg {
+    padding: 15px 13px;
+    display: inline-block;
+}
+
+.footer__developer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font(400, $root-text-size);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.footer__dev-svg {
+    margin-left: 12px;
+}
