@@ -51,7 +51,7 @@
 
 .menu-list {
     background: $blue;
-    visibility: hidden;
+    display: none;
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s ease-out;
     @media screen and (min-width: $tablet) {
@@ -66,38 +66,47 @@
 }
 
 .menu-list--show {
-    visibility: visible;
+    display: block;
     opacity: 1;
     transition: opacity 0.3s ease-in;
     
 }
 
-.menu-list__entry {
+.menu-list__link {
+    display: inline-block;
+    width: 100%;
+    padding: 22px 0;
+
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
     box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.2);
-    display: flex;
-    justify-content: center;
+    
+    color: $white;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @include font(700, rem(18px));
+    
+    &:hover {
+        background: #669ec0;
+    }
+    &:active {
+        background: #5496bd;
+        color: rgba($color: #ffffff, $alpha: 0.3)
+    }
+
     @media screen and (min-width: $tablet) {
         border: none;
         box-shadow: none;
-    }
-}
-
-.menu-list__link {
-    display: inline-block;
-    padding: rem(22px) 0;
-    color: $white;
-    text-transform: uppercase;
-    text-decoration: none;
-    @include font(700, rem(18px));
-    @media screen and (min-width: $tablet) {
         color: #000000;
         &:hover {
             color: $blue;
+            background: none;
         }
         &:active {
-            color: #000000;
-            opacity: 0.3;
+            color: rgba($color: #000000, $alpha: 0.3);
+            background: none;
         }
     }
 }
