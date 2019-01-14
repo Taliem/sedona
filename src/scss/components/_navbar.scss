@@ -25,8 +25,7 @@
 }
 
 .navbar__menu-btn {
-    margin: rem(18px) 0;
-    @include mobile-padding;
+    padding: 18px 20px;
     z-index: 100;
     @media screen and (min-width: $tablet) {
         display: none;
