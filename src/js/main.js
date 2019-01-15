@@ -24,7 +24,7 @@ function initMap() {
         center: sedona,
         zoom: 8
     });
-    var iconMarker = "/img/map-marker.svg";
+    var iconMarker = "img/map-marker.svg";
     var marker = new google.maps.Marker({
         icon: iconMarker,
         position: sedona,
