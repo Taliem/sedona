@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="visibility: hidden; display:none;">
+        <symbol id="menu-burger" viewBox="0 0 22.93 21.98">
+            <rect fill="#81b3d2" width="22.93" height="3.96"></rect>
+            <rect fill="#81b3d2" y="9.01" width="22.93" height="3.96"></rect>
+            <rect fill="#81b3d2" y="18.02" width="22.93" height="3.96"></rect>
+        </symbol>
+        <symbol id="htmlacademy" viewBox="0 0 154.38 195.33">
+            <path d="M78,.59,77.19.5.5,8.54V149.11l76.69,45.63,76.69-45.63V8.54Zm65.85,142.82L77.19,183.07,10.53,143.41V85.79L76.91,125.3l.11,7.16-45.54-27.1-.06,7,45.71,27.47.11,7.35L31.54,120l-.06,7,45.71,27.47,46.15-27.61v-7l0,0V97.1l20.56-12.28Zm0-66.06L125.56,88.09l-8.42,5L77,69.17l-.06,7,34.31,20.41-.3.18-.74.43L105.33,100,77,83.16l-.06,7,22.36,13.3L94,106.94l-.12.07L77,97.06l-.06,7L88,110.54l-11.29,6.78-66-39.26L76.82,38.31h0Zm0-7-67-39.51h0L10.53,70.31V17.58l66.66-7,66.66,7Z" stroke="#231f20" stroke-miterlimit="10"></path>
+        </symbol>
+        <symbol id="burger" viewBox="0 0 76.17 68.96">
+            <path d="M71.91,46H4.25A4.27,4.27,0,0,0,0,50.29v3.46A4.26,4.26,0,0,0,4.25,58h1v1A10,10,0,0,0,15.13,69H61A10,10,0,0,0,71,59V58h1a4.27,4.27,0,0,0,4.26-4.25V50.29A4.27,4.27,0,0,0,71.91,46ZM68,59A6.94,6.94,0,0,1,61,66H15.13A6.93,6.93,0,0,1,8.21,59V58H68Zm5.21-5.29A1.27,1.27,0,0,1,71.91,55H4.25A1.26,1.26,0,0,1,3,53.75V50.29A1.27,1.27,0,0,1,4.25,49H71.91a1.28,1.28,0,0,1,1.26,1.25Z"></path>
+            <polygon points="16.16 37.86 21.64 41.86 27.11 37.86 32.59 41.86 38.07 37.86 43.55 41.86 49.03 37.86 54.51 41.86 59.98 37.86 65.47 41.86 71.84 37.21 70.07 34.79 65.47 38.14 59.98 34.14 54.51 38.14 49.03 34.14 43.55 38.14 38.07 34.14 32.59 38.14 27.11 34.14 21.64 38.14 16.16 34.14 10.69 38.14 6.09 34.79 4.32 37.21 10.69 41.86 16.16 37.86"></polygon>
+            <path d="M70.89,31.09c0-.61,0-2.61,0-3C70.24,12.48,55.8,0,38.08,0S5.92,12.48,5.24,28.09c0,.39,0,2.39,0,3ZM38.08,3c16,0,29.15,11.15,29.84,25.09H8.24C8.93,14.15,22.05,3,38.08,3Z"></path>
+            <circle cx="38.08" cy="15.04" r="2"></circle>
+            <circle cx="30.08" cy="10.08" r="2"></circle>
+            <circle cx="46.08" cy="10.08" r="2"></circle>
+        </symbol>
+        <symbol id="menu-close" viewBox="0 0 22.2 22.2">
+            <polygon fill="#ffffff" points="22.2 2.8 19.4 0 11.1 8.3 2.8 0 0 2.8 8.3 11.1 0 19.4 2.8 22.2 11.1 13.9 19.4 22.2 22.2 19.4 13.9 11.1 22.2 2.8"></polygon>
+        </symbol>
+        <symbol id="fb" viewBox="0 0 8.67 18.94">
+            <path d="M6.28,3.36H8.67V0H5.79C2.66.18,1.54,2.39,2,6.11H0V9.63H2v9.31H5.8V9.63H8.65V6.11H5.79C5.77,5.07,5.75,3.71,6.28,3.36Z"></path>
+        </symbol>
+        <symbol id="gift" viewBox="0 0 63 75.08">
+            <path d="M60.17,22.23H35.76C49.36,15.41,50.45,11.12,50,8.71,48.8,4.79,44.34,1.77,40.1,3.37c-5.49,2.06-7,10.26-8.52,16.19-1.89-6-3.72-13.65-8-17.53A7.21,7.21,0,0,0,17.9,0c-4,.35-9.65,5.32-7.35,10.85,2.22,5.31,9.54,8.67,14.36,11.35H2.83A2.84,2.84,0,0,0,0,25.06V36.25a2.84,2.84,0,0,0,2.84,2.83H3.1v36h57v-36h.11A2.83,2.83,0,0,0,63,36.25V25.06A2.85,2.85,0,0,0,60.17,22.23ZM41.77,5.87c2.07-.3,4.9,1.29,5.17,3.17.39,2.73-3.35,5.2-5,6.35-2.48,1.72-4.85,2.61-7.17,4C35.63,15.75,37.27,6.54,41.77,5.87ZM19.23,15.72C17,14.25,12.79,11.34,12.89,8,13,4.49,18.54,1.55,21.57,4.2c3.8,3.34,5.62,11,7,16.36A68.14,68.14,0,0,1,19.23,15.72Zm5.88,56.43H6V39.08H25.11Zm0-36.07H3V25.23H25.11Zm10,36.07H28.05V25.23h7.07Zm22,0H38.05V39.08H57.13ZM60,36.08h-22V25.23H60Z" transform="translate(0 0)"></path>
+        </symbol>
+        <symbol id="house" viewBox="0 0 74.7 72.35">
+            <path d="M29.5,65.34h16V41.41h-16V65.34Zm13.07-2.93H32.44V44.34H42.57Z"></path>
+            <path d="M72.62,39.44l2.08-2.08-9.91-9.91V.47H51V13.63L37.35,0,0,37.36l2.08,2.08,7.83-7.83v37.8H6v2.94H69.85V69.41H64.79V31.61Zm-18.71-36h7.94v21.1l-7.94-7.94Zm7.94,66h-49V28.67l24.5-24.5,24.5,24.5Z"></path>
+            <path d="M29.75,27.21a7.75,7.75,0,1,0,7.75-7.75A7.75,7.75,0,0,0,29.75,27.21Zm7.75-5a5,5,0,1,1-5,5A5,5,0,0,1,37.5,22.24Z"></path>
+            <rect x="16.91" y="41.41" width="3" height="3.94"></rect>
+            <rect x="22.85" y="41.41" width="3" height="3.94"></rect>
+            <rect x="16.91" y="47.41" width="3" height="3.94"></rect>
+            <rect x="22.85" y="47.41" width="3" height="3.94"></rect>
+            <rect x="48.85" y="41.41" width="3" height="3.94"></rect>
+            <rect x="54.78" y="41.41" width="3" height="3.94"></rect>
+            <rect x="48.85" y="47.41" width="3" height="3.94"></rect>
+            <rect x="54.78" y="47.41" width="3" height="3.94"></rect>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 17.5 14.66">
+            <path d="M11.28.15A3.31,3.31,0,0,1,15,1.3c.69-.22,1.37-.47,2.07-.69a2.27,2.27,0,0,1-.88,1.73,1.62,1.62,0,0,0,1.34-.48,2.89,2.89,0,0,1-1.61,2c-.24,6.59-3.27,11-10.38,10.82H5.05c-.42,0-4.29-.45-5-1.84a6.64,6.64,0,0,0,4.84-1.15c-1-.3-2.77-.47-3.07-2.88A2.13,2.13,0,0,0,3,8.9C1.76,8.07.38,7.37.46,5.22a2,2,0,0,0,1.38.46C1.12,5.44-.19,2.4.92.84,2.79,2.65,4.77,4.36,8.29,4.53,8.51,2.29,9.46.79,11.28.15Z" transform="translate(0 0)"></path>
+        </symbol>
+        <symbol id="youtube" viewBox="0 0 19.98 14.02">
+            <path d="M17.14,0H2.83A2.84,2.84,0,0,0,0,2.83v8.35A2.84,2.84,0,0,0,2.83,14H17.14A2.84,2.84,0,0,0,20,11.18V2.83A2.85,2.85,0,0,0,17.14,0ZM7,10.39V3.62L13.8,7Z"></path>
+        </symbol>
+    </svg>
+    <nav class="navbar">
+    <a href="/" class="navbar__logo">
+        Главная страница
+    </a>
+    <span class="navbar__menu-btn menu-btn">
+        <svg width="22" height="22" class="menu-btn__svg">
+            <use id="toggle-menu__icon" xlink:href="#menu-burger"></use>
+        </svg>
+    </span>
+    <div class="navbar__menu-list menu-list">
+        <div class="menu-list__left">
+            <a class="menu-list__link active-page" href="">главная</a>
+            <a class="menu-list__link" href="">фото и видео</a>
+        </div>
+        <div class="menu-list__right">
+            <a class="menu-list__link" href="">форма отзыва</a>
+            <a class="menu-list__link" href="">html academy</a>      
+        </div>
+    </div>
+</nav>
+    <main class="main">
+        <div class="banner">
+            <img src="img/index-text.svg" alt="" class="banner__img">
+        </div>
+        <article class="about">
+    <header class="about__header">
+        <h1 class="about__title">
+            СЕДОНА — небольшой городок в АРИЗОНЕ,<br> зАСЛУЖИвающий большего!
+        </h1>
+        <p class="about__promo-text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+    </header>
+    <div class="reason">
+        <section class="reason__content reason__content--blue">
+            <h2 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+            <p class="reason__line"><span class="reason__number">№1</span></p>
+            <p class="reason__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </section>
+        <div class="reason__crop">
+            <picture class="reason__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg, img/photo-city-tablet@2x.jpg 2x">
+                <img class="reason__img" src="img/photo-city-mobile.jpg" alt="фото города" srcset="img/photo-city-mobile@2x.jpg 2x">
+            </picture>
+        </div>
+    </div>
+    <div class="offers-wrap">
+        <section class="offer">
+            <svg width="36" height="36" class="offer__icon">
+                <use fill="#81b3d2" xlink:href="#house"></use>
+            </svg>
+            <h2 class="offer__title">Жилье</h2>
+            <p class="offer__text">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+        </section>
+        <section class="offer">
+            <svg width="36" height="36" class="offer__icon">
+                <use fill="#81b3d2" xlink:href="#gift"></use>
+            </svg>
+            <h2 class="offer__title">Сувениры</h2>
+            <p class="offer__text">
+                Не только китайского, но и местного производства!
+            </p>
+        </section>
+        <section class="offer">
+            <svg width="36" height="36" class="offer__icon">
+                <use fill="#81b3d2" xlink:href="#burger"></use>
+            </svg>
+            <h2 class="offer__title">Еда</h2>
+            <p class="offer__text">
+                Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+            </p>
+        </section>
+    </div>
+    <div class="reason reason--reverse">
+        <section class="reason__content reason__content--blue">
+            <h2 class="reason__title">
+                ТАМ ЕСТЬ Мост дьявола
+            </h2>
+            <p class="reason__line"><span class="reason__number">№2</span></p>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </section>
+        <div class="reason__crop">
+            <picture class="reason__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="reason__img" src="img/photo-bridge-mobile.jpg" alt="фото города" srcset="img/photo-bridge-mobile@2x.jpg 2x">
+            </picture>
+        </div>
+    </div>
+    <div class="reason">
+        <section class="reason__content">
+            <h2 class="reason__title">
+                ТАМ ЕСТЬ Мост дьявола
+            </h2>
+            <p class="reason__line"><span class="reason__number">№2</span></p>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </section>
+        <section class="reason__content">
+            <h2 class="reason__title">
+                ТАМ ЕСТЬ Мост дьявола
+            </h2>
+            <p class="reason__line"><span class="reason__number">№2</span></p>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </section>
+        <section class="reason__content">
+            <h2 class="reason__title">
+                ТАМ ЕСТЬ Мост дьявола
+            </h2>
+            <p class="reason__line"><span class="reason__number">№2</span></p>
+            <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </section>
+    </div> 
+    <footer class="about__footer">
+        <section class="interest">
+            <h2 class="interest__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+            <p class="interest__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <button class="btn interest__btn">НАЙТИ гостиницу</button>
+        </section>
+        <div id="map" class="about__map"></div>
+    </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <a href="https://twitter.com/hashtag/visitsedona" class="footer__hashtag">#visitsedona</a>
+    <div class="footer__social-wrap">
+        <a href="#" class="social-link social-link--twitter">
+            <svg height="18" width="20" class="social-link__svg">
+                <use class="social-link__svg-style" fill="#ffffff" xlink:href="#twitter"></use>
+            </svg>
+        </a>
+        <a href="#" class="social-link social-link--facebook">
+            <svg height="18" width="20" class="social-link__svg">
+                <use class="social-link__svg-style" fill="#ffffff" xlink:href="#fb"></use>
+            </svg>
+        </a>
+        <a href="#" class="social-link social-link--youtube">
+            <svg height="18" width="20" class="social-link__svg">
+                <use class="social-link__svg-style" fill="#ffffff" xlink:href="#youtube"></use>
+            </svg>
+        </a>
+    </div>
+    <a href="#" class="footer__developer">
+        Разработано <svg class="footer__dev-svg" height="34" width="27"><use xlink:href="#htmlacademy"></use></svg>
+    </a>
+</footer>
+    <script src="js/main.js" defer=""></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcZJPhjM2iyhWWU5Lp5zGbksQpvihH16I&callback=initMap" defer=""></script>
+</body>
+</html>
